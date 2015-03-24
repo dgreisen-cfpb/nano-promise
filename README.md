@@ -1,21 +1,30 @@
-[![By](https://img.shields.io/badge/made%20by-yld!-32bbee.svg?style=flat-square)](http://yld.io/contact?source=github-nano)[![Chat](https://img.shields.io/badge/help-gitter-eb9348.svg?style=flat-square)](https://gitter.im/dscape/nano)[![Tests](http://img.shields.io/travis/dscape/nano.svg?style=flat-square)](https://travis-ci.org/dscape/nano)![Coverage](https://img.shields.io/badge/coverage-100%-ff69b4.svg?style=flat-square)[![Dependencies](https://img.shields.io/david/dscape/nano.svg?style=flat-square)](https://david-dm.org/dscape/nano)[![NPM](http://img.shields.io/npm/v/nano.svg?style=flat-square)](http://browsenpm.org/package/nano)
+[![Build Status](https://travis-ci.org/dgreisen-cfpb/nano-promise.svg?branch=master)](https://travis-ci.org/dgreisen-cfpb/nano-promise)
 
-# nano
+# nano-promise
 
-minimalistic couchdb driver for node.js
+Minimalistic couchdb driver for node.js. With Promises.
 
-`nano` features:
+`nano-promise` features:
 
 * **minimalistic** - there is only a minimum of abstraction between you and
   couchdb
 * **pipes** - proxy requests from couchdb directly to your end user
+* **promises** - return a promise when you want it. When you don't, you get the usual pipable stream.
 * **errors** - errors are proxied directly from couchdb: if you know couchdb
   you already know `nano`.
 
 ## installation
 
 1. install [npm][1]
-2. `npm install nano`
+2. `npm install https://github.com/dgreisen-cfpb/nano-promise.git`
+
+## how to use promises
+`nano-promise` is identical to `nano`, except that if you pass the string `"promise"` instead of a callback function, nano-promise will return a promise instead of a stream. 
+If you pass a function for the callback, or no callback at all, `nano-promise` acts identically to `nano`.
+
+Promises can be returned by every API call except for `nano.updates` and `nano.followUpdates`, which cannot support promises.
+
+It's that simple.
 
 ## table of contents
 

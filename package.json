@@ -21,7 +21,8 @@
     "follow": "^0.11.4",
     "errs": "^0.3.0",
     "underscore": "^1.7.0",
-    "debug": "^2.0.0"
+    "debug": "^2.0.0",
+    "promise": "^6.1.0"
   },
   "devDependencies": {
     "async": "^0.9.0",
