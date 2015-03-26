@@ -1,11 +1,11 @@
 {
-  "name": "nano",
-  "description": "minimalistic couchdb driver for node.js",
+  "name": "nano-promise",
+  "description": "minimalistic couchdb driver for node.js, with promises",
   "license": "apache 2.0",
-  "homepage": "http://github.com/dscape/nano",
-  "repository": "git://github.com/dscape/nano",
+  "homepage": "http://github.com/dgreisen-cfpb/nano-promise",
+  "repository": "git://github.com/dgreisen-cfpb/nano-promise",
   "version": "6.1.2",
-  "author": "Nuno Job <nunojobpinto@gmail.com> (http://nunojob.com)",
+  "author": "David Greisen <david.greisen@cfpb.gov>",
   "keywords": [
     "couchdb",
     "data",
